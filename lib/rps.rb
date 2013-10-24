@@ -28,7 +28,7 @@ module PPT
 			computer_throw = ''
 			player_throw = req.GET["choice"]
 			@throws = @defeat.keys
-
+			
 			if !@throws.include?(player_throw)
 				do_it = "Elige jugador"
 			else

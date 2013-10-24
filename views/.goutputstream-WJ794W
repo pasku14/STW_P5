@@ -6,6 +6,7 @@
     %link{:href => "/public/css/bootstrap-responsive.css", :rel => "stylesheet"}
     %link{:href => "public/css/style.css", :rel => "stylesheet"}
     %script{:src => "/public/js/bootstrap.js"}
+    %script{:src => "./public/js/reseteo.js"}
   %body
     .row-fluid
       .span12
@@ -14,7 +15,7 @@
             %font{color: "#330066", face: "Arial"} Piedra, Papel, Tijeras.
     .container-fluid
       .row-fluid
-        .span3
+        .span2
           %h2 Elige Jugador!
           %br
           - throws.map do |x|
@@ -31,13 +32,10 @@
                 %button.btn.btn-primary{type: "button"} Tijeras
                 %br
                 %br
-          %h2
-            %font{color: "#00FF00", face: "Arial"} Partidas Ganadas: #{puntos['Ganar'].to_i}
-            %br
-            %font{color: "#FF0000", face: "Arial"} Partidas Perdidas: #{puntos['Perder'].to_i}
-            %br
-            %font{color: "#0000FF", face: "Arial"} Partidas Empatadas: #{puntos['Empatar'].to_i}
-        .span9
+                %br
+          %a{:href => "/"}
+            %button.btn.btn-warning{type: "button", onclick: "reset(puntos)"} REINICIAR
+        .span10
           %br
           %br
           %br
@@ -71,5 +69,12 @@
             %h2
               %center
                 %font{color: "#0000FF", face: "Arial"} Empate!
+    .row-fluid
+      .span12
+        %h2
+          %center
+            %font{color: "#00FF00", face: "Arial"} Partidas Ganadas: #{puntos['Ganar'].to_i}
+            %font{color: "#FF0000", face: "Arial"} Partidas Perdidas: #{puntos['Perder'].to_i}
+            %font{color: "#0000FF", face: "Arial"} Partidas Empatadas: #{puntos['Empatar'].to_i}
       
     
