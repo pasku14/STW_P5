@@ -10,6 +10,7 @@ module PPT
 		#Inicializacion de variables de la clase.
 		def initialize(app = nil)
 			@app = app
+			@puntos = {'Ganar' => 0, 'Perder' => 0, 'Empatar' => 0}
 			@defeat = {'Piedra' => 'Tijeras', 'Papel' => 'Piedra', 'Tijeras' => 'Papel'}
 			@throws = []
 		end
@@ -36,10 +37,13 @@ module PPT
 			
 			if ( player_throw == computer_throw )
 				answer = "empate"
+				@puntos['Empatar'] += 1
 			elsif ( computer_throw == @defeat[player_throw] )
 				answer = "jugador gana"
+				@puntos['Ganar'] += 1
 			else
 				answer = "jugador pierde"
+				@puntos['Perder'] += 1
 			end
 
 			info = {
@@ -47,7 +51,8 @@ module PPT
 				:answer => answer,
 				:throws => @throws,
 				:computer_throw => computer_throw,
-				:player_throw => player_throw
+				:player_throw => player_throw,
+				:puntos => @puntos,
 				}
 				
 			res = Rack::Response.new(haml("./views/index.html.haml", info))
