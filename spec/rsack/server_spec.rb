@@ -1,19 +1,20 @@
+require './spec/spec_helper'
+
 describe Rsack::Server do 
 	def server
 		Rack::MockRequest.new(Rsack::Server.new)
 	end
 
-	#PRINCIPAL
 	context '/' do 
 
-		it "Deberia devolver el codigo 200" do 
+		it "Codigo 200" do 
 			response = server.get('/')
 			response.status.should == 200
 		end
 
-		it "Deberia mostrar RPS" do 
+		it "RPS" do 
 			response = server.get('/')
-			response.header == 'RPS'
+			response.header == 'Piedra, Papel, Tijeras'
 		end
 	end
 end
