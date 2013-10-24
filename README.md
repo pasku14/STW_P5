@@ -1,18 +1,38 @@
-Práctica 4: Añada Hojas de Estilo a Piedra Papel Tijeras.
+Práctica 5: Añada Pruebas a Piedra Papel Tijeras.
 ================================
 
 <center>
 ![](http://neetecno.com/wp-content/uploads/2012/01/ruby-logo4.jpg)
 ![](https://liveramp.com/files/2012/12/haml.png)
-![](http://www.fjaguero.com/wp-content/uploads/2012/06/twitterBootstrap.jpg)
 </center>
 
-## DESCRIPCION ##
+1. DESCRIPCION
+--------------
 
-El objetivo de esta práctica es crear el juego de Piedra, Papel y Tijeras utilizando Ruby y Haml y Hojas de Estilo.
+	El objetivo de esta práctica es modificar el juego de Piedra, Papel y Tijeras utilizando Ruby y Haml, Hojas de Estilo y Tests.
 
- 
-## AUTOR ##
+	ambien se añadirá un contador de partidas.
+
+
+2. CONFIGURACIÓN
+----------------
+
+	Instalaremos las gemas necesarias: bundle install
+
+
+3. EJECUCIÓN
+------------
+	
+	3.1. Ejecución de la aplicación:
+	
+		Para ejecutar la práctica iremos desde consola a la carpeta raíz de la practica.
+		Una vez ahi ejecutaremos el comando 'rake' y visitamos la direccion 'http://localhost:8080/' para poder usar la aplicación.
+	
+	3.2. Ejecución de los test:
+	
+	
+4. AUTOR
+--------
 
 Fernando Cifuentes Gonzalez.
 
