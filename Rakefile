@@ -5,5 +5,5 @@ end
 
 desc "Ejecutar los Test Rspec"
 task :spec do
-	sh ""
+	sh "rspec spec/rsack/server_spec.rb"
 end
