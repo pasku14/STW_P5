@@ -35,15 +35,19 @@ module PPT
 				computer_throw = @throws.sample
 			end
 			
-			if ( player_throw == computer_throw )
+			if ( computer_throw == '' )
+				answer = ''
+			elsif ( player_throw == computer_throw )
 				answer = "empate"
 				@puntos['Empatar'] += 1
 			elsif ( computer_throw == @defeat[player_throw] )
 				answer = "jugador gana"
 				@puntos['Ganar'] += 1
-			else
+			elsif ( player_throw == @defeat[computer_throw] )
 				answer = "jugador pierde"
 				@puntos['Perder'] += 1
+			else
+				answer = ''
 			end
 
 			info = {

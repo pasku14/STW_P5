@@ -70,6 +70,10 @@
                 %font{color: "#0000FF", face: "Arial"} Empate!
     .row-fluid
       .span12
-      %h2= puntos['Ganar'].to_i
+        %h2
+          %center
+            %font{color: "#00FF00", face: "Arial"} Partidas Ganadas: #{puntos['Ganar'].to_i}
+            %font{color: "#FF0000", face: "Arial"} Partidas Perdidas: #{puntos['Perder'].to_i}
+            %font{color: "#0000FF", face: "Arial"} Partidas Empatadas: #{puntos['Empatar'].to_i}
       
     
