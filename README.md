@@ -31,6 +31,10 @@ Práctica 5: Añada Pruebas a Piedra Papel Tijeras.
 	
 	3.2. Ejecución de los test:
 	
+		Para ejecutar los test iremos desde consola a la carpeta raíz de la practica.
+		Una vez ahi ejecutaremos el comando 'rake'.
+		Abrimos otra consola y escribimos el comando 'rake spec' para ejecutar los test.
+	
 	
 4. AUTOR
 --------
