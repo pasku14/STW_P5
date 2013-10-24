@@ -3,6 +3,7 @@ Práctica 5: Añada Pruebas a Piedra Papel Tijeras.
 
 <center>
 ![](http://neetecno.com/wp-content/uploads/2012/01/ruby-logo4.jpg)
+&nbsp;&nbsp;
 ![](https://liveramp.com/files/2012/12/haml.png)
 </center>
 
