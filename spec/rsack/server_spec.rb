@@ -25,7 +25,7 @@ describe Rsack::Server do
 		it "Ganar" do 
 			computer_throw = 'Papel'
 			response = server.get("/?choice='Tijeras'")
-			response.body.include?("Ganaste!")
+			response.body.include?("chuchu")
 		end
 
 		it "Perder" do 
